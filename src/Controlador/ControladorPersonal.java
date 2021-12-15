@@ -20,6 +20,7 @@ public class ControladorPersonal implements ActionListener{
 
     FrmPersonal per = new FrmPersonal();
     ClaseDatosPersonal cl = new ClaseDatosPersonal();
+    ValidacionesPersonal validar = new ValidacionesPersonal(per);
     
     public ControladorPersonal(FrmPersonal per, ClaseDatosPersonal cl){
         this.per = per;
@@ -29,8 +30,43 @@ public class ControladorPersonal implements ActionListener{
         this.per.btnSalir.addActionListener(this);
     }
     
+    public void IniciarTextos(){
+        per.txtApellidoM.setEnabled(false);
+        per.txtApellidoP.setEnabled(false);
+        per.txtBuscar.setEnabled(true);
+        per.txtDireccion.setEditable(false);
+        per.txtDni.setEnabled(false);
+        per.txtEmail.setEnabled(false);
+        per.txtNombre.setEnabled(false);
+        per.txtTelefono.setEnabled(false);
+    }
+    
+    public boolean ValidarBuscarDniPersonal(){
+        boolean valido;
+        if(per.txtBuscar.getText().trim().length() !=0){
+            valido = true;
+        }else{
+            valido = false;
+        }
+        return valido;
+    }
+    
+    public void limpiarBuscar(){
+         per.txtBuscar.setText("");
+    }
+    
+    public void CursorBuscar(){
+        per.txtBuscar.requestFocus();
+    }
+    
     @Override
     public void actionPerformed(ActionEvent ae) {
+
+        if(ae.getSource() == per.btnContinuar){
+            if(per.txtDni.getText().trim().length() !=0){
+                
+            }
+        }
         if(ae.getSource() == per.btnContinuar){
             if(per.txtDni.getText().trim().length() !=0 &&
                per.txtNombre.getText().trim().length() !=0 &&
@@ -80,19 +116,20 @@ public class ControladorPersonal implements ActionListener{
         } 
         
         if(ae.getSource() == per.btnBuscar){
-            if(per.txtBuscar.getText().trim().length() !=0){
-                
+            if(ValidarBuscarDniPersonal()){
                 int dni = Integer.parseInt(per.txtBuscar.getText());
                 
                 int numRegistros = cl.BuscarPersonal(dni).size();
                 
                 if(numRegistros > 0){
                     JOptionPane.showMessageDialog(per, "YA EXISTE UN REGISTRO");
+                    limpiarBuscar();
+                    CursorBuscar();
                 } else{
                     JOptionPane.showMessageDialog(per, "NO EXISTE REGISTRO");
                     per.txtDni.setText(per.txtBuscar.getText());
-                }
-                
+                    limpiarBuscar();
+                }                
             }else{
                 JOptionPane.showMessageDialog(null, "INGRESE EL DNI PARA BUSCAR");
             }
