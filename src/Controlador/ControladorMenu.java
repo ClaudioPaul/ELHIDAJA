@@ -31,6 +31,7 @@ public class ControladorMenu implements ActionListener{
             FrmPersonal per = new FrmPersonal();
             ClaseDatosPersonal cl = new ClaseDatosPersonal();
             ControladorPersonal conper = new ControladorPersonal(per, cl);
+            conper.IniciarTextos();
             per.setVisible(true);
         }
     }
