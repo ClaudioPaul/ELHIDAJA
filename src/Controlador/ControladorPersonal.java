@@ -20,7 +20,6 @@ public class ControladorPersonal implements ActionListener{
 
     FrmPersonal per = new FrmPersonal();
     ClaseDatosPersonal cl = new ClaseDatosPersonal();
-    ValidacionesPersonal validar = new ValidacionesPersonal(per);
     
     public ControladorPersonal(FrmPersonal per, ClaseDatosPersonal cl){
         this.per = per;
