@@ -75,6 +75,8 @@ public class FrmPersonal extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(210, 126, 0));
         setUndecorated(true);
+        setPreferredSize(new java.awt.Dimension(960, 471));
+        setResizable(false);
         setSize(new java.awt.Dimension(960, 471));
         getContentPane().setLayout(null);
 
