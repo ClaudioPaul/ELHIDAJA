@@ -59,6 +59,7 @@ public class FrmPersonal extends javax.swing.JFrame {
         ChecEmail = new javax.swing.JCheckBox();
         ChecFechaI = new javax.swing.JCheckBox();
         ChecFechaN = new javax.swing.JCheckBox();
+        ChecDNI1 = new javax.swing.JCheckBox();
         jPanel2 = new javax.swing.JPanel();
         btnEliminar = new javax.swing.JButton();
         btnModificar = new javax.swing.JButton();
@@ -67,7 +68,6 @@ public class FrmPersonal extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         txtBuscar = new javax.swing.JTextField();
         btnBuscar = new javax.swing.JButton();
-        ChecDNI1 = new javax.swing.JCheckBox();
         jPanel4 = new javax.swing.JPanel();
         btnCancelar = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
@@ -86,7 +86,7 @@ public class FrmPersonal extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
         jButton1.setText("X");
         jPanel6.add(jButton1);
-        jButton1.setBounds(863, 10, 40, 23);
+        jButton1.setBounds(863, 10, 40, 21);
 
         getContentPane().add(jPanel6);
         jPanel6.setBounds(0, 0, 950, 40);
@@ -150,7 +150,7 @@ public class FrmPersonal extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel1.setText("NOMBRE:");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(50, 60, 90, 15);
+        jLabel1.setBounds(50, 60, 90, 14);
 
         jLabel2.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel2.setText("DNI:");
@@ -160,7 +160,7 @@ public class FrmPersonal extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel3.setText("APELLIDO P:");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(50, 110, 100, 15);
+        jLabel3.setBounds(50, 110, 100, 14);
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel4.setText("APELLIDO MATERNO:");
@@ -295,6 +295,17 @@ public class FrmPersonal extends javax.swing.JFrame {
         jPanel1.add(ChecFechaN);
         ChecFechaN.setBounds(690, 130, 20, 21);
 
+        ChecDNI1.setBackground(new java.awt.Color(255, 255, 255));
+        ChecDNI1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        ChecDNI1.setForeground(new java.awt.Color(210, 126, 0));
+        ChecDNI1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ChecDNI1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(ChecDNI1);
+        ChecDNI1.setBounds(220, 30, 20, 21);
+
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 90, 750, 220);
 
@@ -353,17 +364,6 @@ public class FrmPersonal extends javax.swing.JFrame {
         btnBuscar.setPreferredSize(new java.awt.Dimension(97, 23));
         jPanel3.add(btnBuscar);
         btnBuscar.setBounds(580, 10, 100, 23);
-
-        ChecDNI1.setBackground(new java.awt.Color(255, 255, 255));
-        ChecDNI1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        ChecDNI1.setForeground(new java.awt.Color(210, 126, 0));
-        ChecDNI1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ChecDNI1ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(ChecDNI1);
-        ChecDNI1.setBounds(150, 20, 20, 21);
 
         getContentPane().add(jPanel3);
         jPanel3.setBounds(0, 40, 950, 50);
