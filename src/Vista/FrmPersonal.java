@@ -86,7 +86,7 @@ public class FrmPersonal extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
         jButton1.setText("X");
         jPanel6.add(jButton1);
-        jButton1.setBounds(863, 10, 40, 21);
+        jButton1.setBounds(853, 10, 50, 21);
 
         getContentPane().add(jPanel6);
         jPanel6.setBounds(0, 0, 950, 40);
@@ -346,7 +346,7 @@ public class FrmPersonal extends javax.swing.JFrame {
         btnCancelar1.setBounds(40, 160, 100, 23);
 
         getContentPane().add(jPanel2);
-        jPanel2.setBounds(760, 90, 190, 220);
+        jPanel2.setBounds(750, 90, 200, 220);
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setLayout(null);
