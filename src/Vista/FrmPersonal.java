@@ -28,7 +28,7 @@ public class FrmPersonal extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel6 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        btnSalir = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         txtDni = new javax.swing.JTextField();
         txtNombre = new javax.swing.JTextField();
@@ -75,18 +75,17 @@ public class FrmPersonal extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(210, 126, 0));
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(960, 471));
         setSize(new java.awt.Dimension(960, 471));
         getContentPane().setLayout(null);
 
         jPanel6.setBackground(new java.awt.Color(90, 83, 79));
         jPanel6.setLayout(null);
 
-        jButton1.setBackground(new java.awt.Color(210, 126, 0));
-        jButton1.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
-        jButton1.setText("X");
-        jPanel6.add(jButton1);
-        jButton1.setBounds(853, 10, 50, 21);
+        btnSalir.setBackground(new java.awt.Color(210, 126, 0));
+        btnSalir.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        btnSalir.setText("X");
+        jPanel6.add(btnSalir);
+        btnSalir.setBounds(853, 10, 50, 23);
 
         getContentPane().add(jPanel6);
         jPanel6.setBounds(0, 0, 950, 40);
@@ -150,7 +149,7 @@ public class FrmPersonal extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel1.setText("NOMBRE:");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(50, 60, 90, 14);
+        jLabel1.setBounds(50, 60, 90, 15);
 
         jLabel2.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel2.setText("DNI:");
@@ -160,7 +159,7 @@ public class FrmPersonal extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel3.setText("APELLIDO P:");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(50, 110, 100, 14);
+        jLabel3.setBounds(50, 110, 100, 15);
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel4.setText("APELLIDO MATERNO:");
@@ -487,10 +486,10 @@ public class FrmPersonal extends javax.swing.JFrame {
     public javax.swing.JButton btnContinuar;
     private javax.swing.JButton btnEliminar;
     private javax.swing.JButton btnModificar;
+    public javax.swing.JButton btnSalir;
     public javax.swing.JComboBox<String> cmbSexo;
     public com.toedter.calendar.JDateChooser dateFechaI;
     public com.toedter.calendar.JDateChooser dateFechaN;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
