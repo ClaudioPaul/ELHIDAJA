@@ -42,7 +42,7 @@ public class FrmPersonalChofer extends javax.swing.JFrame {
         cmbPlanilla = new javax.swing.JComboBox<>();
         ChecPlantilla = new javax.swing.JCheckBox();
         jLabel12 = new javax.swing.JLabel();
-        txtDni2 = new javax.swing.JTextField();
+        txtCargarArchivo = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         ChecCargarArchivo = new javax.swing.JCheckBox();
         btnSeleccionarArchivo = new javax.swing.JButton();
@@ -160,11 +160,11 @@ public class FrmPersonalChofer extends javax.swing.JFrame {
         jPanel1.add(jLabel12);
         jLabel12.setBounds(250, 80, 70, 20);
 
-        txtDni2.setBackground(new java.awt.Color(218, 218, 218));
-        txtDni2.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        txtDni2.setBorder(null);
-        jPanel1.add(txtDni2);
-        txtDni2.setBounds(350, 160, 70, 22);
+        txtCargarArchivo.setBackground(new java.awt.Color(218, 218, 218));
+        txtCargarArchivo.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        txtCargarArchivo.setBorder(null);
+        jPanel1.add(txtCargarArchivo);
+        txtCargarArchivo.setBounds(350, 160, 70, 22);
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel4.setText("CARGAR ARCHIVO:");
@@ -287,8 +287,8 @@ public class FrmPersonalChofer extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    public javax.swing.JTextField txtCargarArchivo;
     public javax.swing.JTextField txtCodigoLicencia;
     public javax.swing.JTextField txtCodigoSCTR;
-    public javax.swing.JTextField txtDni2;
     // End of variables declaration//GEN-END:variables
 }
