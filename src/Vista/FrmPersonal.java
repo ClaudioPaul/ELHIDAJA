@@ -51,7 +51,6 @@ public class FrmPersonal extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         dateFechaI = new com.toedter.calendar.JDateChooser();
         ChecSexo = new javax.swing.JCheckBox();
-        ChecDNI1 = new javax.swing.JCheckBox();
         ChecNombre = new javax.swing.JCheckBox();
         ChecApellidoP = new javax.swing.JCheckBox();
         ChecApellidoM = new javax.swing.JCheckBox();
@@ -68,6 +67,7 @@ public class FrmPersonal extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         txtBuscar = new javax.swing.JTextField();
         btnBuscar = new javax.swing.JButton();
+        ChecDNI1 = new javax.swing.JCheckBox();
         jPanel4 = new javax.swing.JPanel();
         btnCancelar = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
@@ -215,17 +215,6 @@ public class FrmPersonal extends javax.swing.JFrame {
         jPanel1.add(ChecSexo);
         ChecSexo.setBounds(690, 80, 20, 21);
 
-        ChecDNI1.setBackground(new java.awt.Color(255, 255, 255));
-        ChecDNI1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        ChecDNI1.setForeground(new java.awt.Color(210, 126, 0));
-        ChecDNI1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ChecDNI1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(ChecDNI1);
-        ChecDNI1.setBounds(220, 30, 20, 21);
-
         ChecNombre.setBackground(new java.awt.Color(255, 255, 255));
         ChecNombre.setForeground(new java.awt.Color(210, 126, 0));
         ChecNombre.addActionListener(new java.awt.event.ActionListener() {
@@ -364,6 +353,17 @@ public class FrmPersonal extends javax.swing.JFrame {
         btnBuscar.setPreferredSize(new java.awt.Dimension(97, 23));
         jPanel3.add(btnBuscar);
         btnBuscar.setBounds(580, 10, 100, 23);
+
+        ChecDNI1.setBackground(new java.awt.Color(255, 255, 255));
+        ChecDNI1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        ChecDNI1.setForeground(new java.awt.Color(210, 126, 0));
+        ChecDNI1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ChecDNI1ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(ChecDNI1);
+        ChecDNI1.setBounds(150, 20, 20, 21);
 
         getContentPane().add(jPanel3);
         jPanel3.setBounds(0, 40, 950, 50);
