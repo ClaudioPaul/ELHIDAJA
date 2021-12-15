@@ -40,12 +40,12 @@ public class FrmPersonalChofer extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         ChecTipoLicencia = new javax.swing.JCheckBox();
         cmbPlanilla = new javax.swing.JComboBox<>();
-        ChecPlantilla = new javax.swing.JCheckBox();
+        ChecCargarArchivo = new javax.swing.JCheckBox();
         jLabel12 = new javax.swing.JLabel();
         txtCargarArchivo = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        ChecCargarArchivo = new javax.swing.JCheckBox();
         btnSeleccionarArchivo = new javax.swing.JButton();
+        ChecPlantilla1 = new javax.swing.JCheckBox();
         jPanel2 = new javax.swing.JPanel();
         btnRegistrarChofer = new javax.swing.JButton();
 
@@ -145,15 +145,15 @@ public class FrmPersonalChofer extends javax.swing.JFrame {
         jPanel1.add(cmbPlanilla);
         cmbPlanilla.setBounds(250, 100, 170, 20);
 
-        ChecPlantilla.setBackground(new java.awt.Color(255, 255, 255));
-        ChecPlantilla.setForeground(new java.awt.Color(210, 126, 0));
-        ChecPlantilla.addActionListener(new java.awt.event.ActionListener() {
+        ChecCargarArchivo.setBackground(new java.awt.Color(255, 255, 255));
+        ChecCargarArchivo.setForeground(new java.awt.Color(210, 126, 0));
+        ChecCargarArchivo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ChecPlantillaActionPerformed(evt);
+                ChecCargarArchivoActionPerformed(evt);
             }
         });
-        jPanel1.add(ChecPlantilla);
-        ChecPlantilla.setBounds(420, 100, 20, 21);
+        jPanel1.add(ChecCargarArchivo);
+        ChecCargarArchivo.setBounds(420, 160, 20, 21);
 
         jLabel12.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel12.setText("PLANILLA:");
@@ -171,23 +171,22 @@ public class FrmPersonalChofer extends javax.swing.JFrame {
         jPanel1.add(jLabel4);
         jLabel4.setBounds(250, 140, 120, 20);
 
-        ChecCargarArchivo.setBackground(new java.awt.Color(255, 255, 255));
-        ChecCargarArchivo.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        ChecCargarArchivo.setForeground(new java.awt.Color(210, 126, 0));
-        ChecCargarArchivo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ChecCargarArchivoActionPerformed(evt);
-            }
-        });
-        jPanel1.add(ChecCargarArchivo);
-        ChecCargarArchivo.setBounds(420, 160, 20, 21);
-
         btnSeleccionarArchivo.setBackground(new java.awt.Color(210, 126, 0));
         btnSeleccionarArchivo.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btnSeleccionarArchivo.setForeground(new java.awt.Color(255, 255, 255));
         btnSeleccionarArchivo.setText("ARCHIVO");
         jPanel1.add(btnSeleccionarArchivo);
         btnSeleccionarArchivo.setBounds(250, 160, 90, 23);
+
+        ChecPlantilla1.setBackground(new java.awt.Color(255, 255, 255));
+        ChecPlantilla1.setForeground(new java.awt.Color(210, 126, 0));
+        ChecPlantilla1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ChecPlantilla1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(ChecPlantilla1);
+        ChecPlantilla1.setBounds(420, 100, 20, 21);
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 480, 200);
@@ -224,13 +223,13 @@ public class FrmPersonalChofer extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_ChecTipoLicenciaActionPerformed
 
-    private void ChecPlantillaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChecPlantillaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ChecPlantillaActionPerformed
-
     private void ChecCargarArchivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChecCargarArchivoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_ChecCargarArchivoActionPerformed
+
+    private void ChecPlantilla1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChecPlantilla1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ChecPlantilla1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -272,7 +271,7 @@ public class FrmPersonalChofer extends javax.swing.JFrame {
     public javax.swing.JCheckBox ChecCodigoLicencia;
     public javax.swing.JCheckBox ChecCodigoSCTR;
     public javax.swing.JCheckBox ChecLicenciaAIV;
-    public javax.swing.JCheckBox ChecPlantilla;
+    public javax.swing.JCheckBox ChecPlantilla1;
     public javax.swing.JCheckBox ChecTipoLicencia;
     public javax.swing.JButton btnRegistrarChofer;
     public javax.swing.JButton btnSeleccionarArchivo;
