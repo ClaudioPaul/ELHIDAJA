@@ -38,7 +38,6 @@ public class ControladorPersonal implements ActionListener{
         per.txtEmail.setEnabled(false);
         per.txtNombre.setEnabled(false);
         per.txtTelefono.setEnabled(false);
-        per.txtBuscar.requestFocus();
     }
     
     public boolean ValidarBuscarDniPersonal(){
