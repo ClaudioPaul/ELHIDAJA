@@ -44,10 +44,10 @@ public class FrmPersonalChofer extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         txtCargarArchivo = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        btnSeleccionarArchivo = new javax.swing.JButton();
         ChecPlantilla1 = new javax.swing.JCheckBox();
+        btnSelccionarArchivo = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        btnRegistrarChofer = new javax.swing.JButton();
+        btnRegistrarChofer1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -171,13 +171,6 @@ public class FrmPersonalChofer extends javax.swing.JFrame {
         jPanel1.add(jLabel4);
         jLabel4.setBounds(250, 140, 120, 20);
 
-        btnSeleccionarArchivo.setBackground(new java.awt.Color(210, 126, 0));
-        btnSeleccionarArchivo.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnSeleccionarArchivo.setForeground(new java.awt.Color(255, 255, 255));
-        btnSeleccionarArchivo.setText("ARCHIVO");
-        jPanel1.add(btnSeleccionarArchivo);
-        btnSeleccionarArchivo.setBounds(250, 160, 90, 23);
-
         ChecPlantilla1.setBackground(new java.awt.Color(255, 255, 255));
         ChecPlantilla1.setForeground(new java.awt.Color(210, 126, 0));
         ChecPlantilla1.addActionListener(new java.awt.event.ActionListener() {
@@ -188,18 +181,25 @@ public class FrmPersonalChofer extends javax.swing.JFrame {
         jPanel1.add(ChecPlantilla1);
         ChecPlantilla1.setBounds(420, 100, 20, 21);
 
+        btnSelccionarArchivo.setBackground(new java.awt.Color(210, 126, 0));
+        btnSelccionarArchivo.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnSelccionarArchivo.setForeground(new java.awt.Color(255, 255, 255));
+        btnSelccionarArchivo.setText("ARCHIVO");
+        jPanel1.add(btnSelccionarArchivo);
+        btnSelccionarArchivo.setBounds(250, 160, 90, 23);
+
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 480, 200);
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(null);
 
-        btnRegistrarChofer.setBackground(new java.awt.Color(210, 126, 0));
-        btnRegistrarChofer.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnRegistrarChofer.setForeground(new java.awt.Color(255, 255, 255));
-        btnRegistrarChofer.setText("REGISTRAR");
-        jPanel2.add(btnRegistrarChofer);
-        btnRegistrarChofer.setBounds(30, 80, 100, 23);
+        btnRegistrarChofer1.setBackground(new java.awt.Color(210, 126, 0));
+        btnRegistrarChofer1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnRegistrarChofer1.setForeground(new java.awt.Color(255, 255, 255));
+        btnRegistrarChofer1.setText("REGISTRAR");
+        jPanel2.add(btnRegistrarChofer1);
+        btnRegistrarChofer1.setBounds(30, 80, 100, 23);
 
         getContentPane().add(jPanel2);
         jPanel2.setBounds(480, 0, 160, 200);
@@ -273,8 +273,8 @@ public class FrmPersonalChofer extends javax.swing.JFrame {
     public javax.swing.JCheckBox ChecLicenciaAIV;
     public javax.swing.JCheckBox ChecPlantilla1;
     public javax.swing.JCheckBox ChecTipoLicencia;
-    public javax.swing.JButton btnRegistrarChofer;
-    public javax.swing.JButton btnSeleccionarArchivo;
+    public javax.swing.JButton btnRegistrarChofer1;
+    public javax.swing.JButton btnSelccionarArchivo;
     public javax.swing.JComboBox<String> cmbLicenciaAIV;
     public javax.swing.JComboBox<String> cmbPlanilla;
     public javax.swing.JComboBox<String> cmbSexo2;
