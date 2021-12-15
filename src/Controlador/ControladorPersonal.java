@@ -26,6 +26,7 @@ public class ControladorPersonal implements ActionListener{
         this.cl = cl;
         this.per.btnContinuar.addActionListener(this);
         this.per.btnBuscar.addActionListener(this);
+        this.per.btnSalir.addActionListener(this);
     }
     
     @Override
@@ -96,7 +97,11 @@ public class ControladorPersonal implements ActionListener{
                 JOptionPane.showMessageDialog(null, "INGRESE EL DNI PARA BUSCAR");
             }
         }
-       
+
+        if(ae.getSource() == per.btnSalir){
+            per.dispose();
+        }
+             
     }
     
 }
