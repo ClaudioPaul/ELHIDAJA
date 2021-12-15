@@ -28,8 +28,7 @@ public class ControladorPersonal implements ActionListener{
         this.per.btnBuscar.addActionListener(this);
         this.per.btnSalir.addActionListener(this);
     }
-    
-    public void IniciarTextos(){
+     public void IniciarTextos(){
         per.txtApellidoM.setEnabled(false);
         per.txtApellidoP.setEnabled(false);
         per.txtBuscar.setEnabled(true);
