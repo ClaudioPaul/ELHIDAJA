@@ -47,7 +47,7 @@ public class FrmPersonalChofer extends javax.swing.JFrame {
         ChecCargarArchivo = new javax.swing.JCheckBox();
         btnSeleccionarArchivo = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        btnContinuar1 = new javax.swing.JButton();
+        btnRegistrarChofer = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -195,12 +195,12 @@ public class FrmPersonalChofer extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(null);
 
-        btnContinuar1.setBackground(new java.awt.Color(210, 126, 0));
-        btnContinuar1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnContinuar1.setForeground(new java.awt.Color(255, 255, 255));
-        btnContinuar1.setText("REGISTRAR");
-        jPanel2.add(btnContinuar1);
-        btnContinuar1.setBounds(30, 80, 100, 23);
+        btnRegistrarChofer.setBackground(new java.awt.Color(210, 126, 0));
+        btnRegistrarChofer.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnRegistrarChofer.setForeground(new java.awt.Color(255, 255, 255));
+        btnRegistrarChofer.setText("REGISTRAR");
+        jPanel2.add(btnRegistrarChofer);
+        btnRegistrarChofer.setBounds(30, 80, 100, 23);
 
         getContentPane().add(jPanel2);
         jPanel2.setBounds(480, 0, 160, 200);
@@ -274,7 +274,7 @@ public class FrmPersonalChofer extends javax.swing.JFrame {
     public javax.swing.JCheckBox ChecLicenciaAIV;
     public javax.swing.JCheckBox ChecPlantilla;
     public javax.swing.JCheckBox ChecTipoLicencia;
-    public javax.swing.JButton btnContinuar1;
+    public javax.swing.JButton btnRegistrarChofer;
     public javax.swing.JButton btnSeleccionarArchivo;
     public javax.swing.JComboBox<String> cmbLicenciaAIV;
     public javax.swing.JComboBox<String> cmbPlanilla;

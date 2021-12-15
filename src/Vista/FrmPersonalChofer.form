@@ -434,7 +434,7 @@
         <Property name="useNullLayout" type="boolean" value="true"/>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="btnContinuar1">
+        <Component class="javax.swing.JButton" name="btnRegistrarChofer">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="7e" red="d2" type="rgb"/>
