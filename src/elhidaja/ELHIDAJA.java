@@ -19,6 +19,7 @@ public class ELHIDAJA {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        //Llamado al formulario Login para mostrar
         FrmLogin login = new FrmLogin();
         Controlador.ControladorLogin conl = new ControladorLogin(login);
         login.setVisible(true);
