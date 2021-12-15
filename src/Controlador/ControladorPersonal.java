@@ -28,6 +28,8 @@ public class ControladorPersonal implements ActionListener{
         this.per.btnBuscar.addActionListener(this);
         this.per.btnSalir.addActionListener(this);
     }
+    
+/////// INICIAR TEXTOS Y CAMPOS BLOQUEADOS SEGUN SE NECESITA EN EL SISTEMA
      public void IniciarTextos(){
         per.txtApellidoM.setEnabled(false);
         per.txtApellidoP.setEnabled(false);
@@ -39,6 +41,7 @@ public class ControladorPersonal implements ActionListener{
         per.txtTelefono.setEnabled(false);
     }
     
+//////  VALIDAR QUE EL CAMPO BUSCAR DNI SEA LLENADO
     public boolean ValidarBuscarDniPersonal(){
         boolean valido;
         if(per.txtBuscar.getText().trim().length() !=0){
@@ -49,22 +52,18 @@ public class ControladorPersonal implements ActionListener{
         return valido;
     }
     
+////// LIMPIAR EL TEXTO BUSCAR DNI
     public void limpiarBuscar(){
          per.txtBuscar.setText("");
     }
     
+////// COMANDO PARA QUE QUE SE INICE EL CURSOR EN EL CAMPO BUSCAR DNI
     public void CursorBuscar(){
         per.txtBuscar.requestFocus();
     }
     
     @Override
     public void actionPerformed(ActionEvent ae) {
-
-        if(ae.getSource() == per.btnContinuar){
-            if(per.txtDni.getText().trim().length() !=0){
-                
-            }
-        }
         if(ae.getSource() == per.btnContinuar){
             if(per.txtDni.getText().trim().length() !=0 &&
                per.txtNombre.getText().trim().length() !=0 &&
