@@ -38,7 +38,7 @@ public class FrmPersonalChofer extends javax.swing.JFrame {
         ChecLicenciaAIV = new javax.swing.JCheckBox();
         cmbSexo2 = new javax.swing.JComboBox<>();
         jLabel11 = new javax.swing.JLabel();
-        ChecSexo2 = new javax.swing.JCheckBox();
+        ChecTipoLicencia = new javax.swing.JCheckBox();
         cmbPlanilla = new javax.swing.JComboBox<>();
         ChecPlantilla = new javax.swing.JCheckBox();
         jLabel12 = new javax.swing.JLabel();
@@ -130,15 +130,15 @@ public class FrmPersonalChofer extends javax.swing.JFrame {
         jPanel1.add(jLabel11);
         jLabel11.setBounds(20, 80, 90, 20);
 
-        ChecSexo2.setBackground(new java.awt.Color(255, 255, 255));
-        ChecSexo2.setForeground(new java.awt.Color(210, 126, 0));
-        ChecSexo2.addActionListener(new java.awt.event.ActionListener() {
+        ChecTipoLicencia.setBackground(new java.awt.Color(255, 255, 255));
+        ChecTipoLicencia.setForeground(new java.awt.Color(210, 126, 0));
+        ChecTipoLicencia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ChecSexo2ActionPerformed(evt);
+                ChecTipoLicenciaActionPerformed(evt);
             }
         });
-        jPanel1.add(ChecSexo2);
-        ChecSexo2.setBounds(190, 100, 20, 21);
+        jPanel1.add(ChecTipoLicencia);
+        ChecTipoLicencia.setBounds(190, 100, 20, 21);
 
         cmbPlanilla.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "Si", "No" }));
         cmbPlanilla.setBorder(null);
@@ -220,9 +220,9 @@ public class FrmPersonalChofer extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_ChecLicenciaAIVActionPerformed
 
-    private void ChecSexo2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChecSexo2ActionPerformed
+    private void ChecTipoLicenciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChecTipoLicenciaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_ChecSexo2ActionPerformed
+    }//GEN-LAST:event_ChecTipoLicenciaActionPerformed
 
     private void ChecPlantillaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChecPlantillaActionPerformed
         // TODO add your handling code here:
@@ -273,7 +273,7 @@ public class FrmPersonalChofer extends javax.swing.JFrame {
     public javax.swing.JCheckBox ChecCodigoSCTR;
     public javax.swing.JCheckBox ChecLicenciaAIV;
     public javax.swing.JCheckBox ChecPlantilla;
-    public javax.swing.JCheckBox ChecSexo2;
+    public javax.swing.JCheckBox ChecTipoLicencia;
     public javax.swing.JButton btnContinuar1;
     public javax.swing.JButton btnSeleccionarArchivo;
     public javax.swing.JComboBox<String> cmbLicenciaAIV;
